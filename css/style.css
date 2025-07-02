@@ -335,86 +335,7 @@ body {
     box-shadow: 0 0 8px var(--accent-color);
 }
 
-/* --- Projects Section --- */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-}
 
-.project-card {
-    background-color: var(--secondary-color);
-    border: 1px solid var(--secondary-color);
-    overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--accent-color);
-    box-shadow: 0 0 20px rgba(252, 238, 10, 0.3);
-}
-
-.project-card img {
-    width: 100%;
-    display: block;
-    filter: saturate(0.5);
-    transition: filter 0.3s;
-}
-
-.project-card:hover img {
-    filter: saturate(1);
-}
-
-.project-info {
-    padding: 1.5rem;
-}
-
-.project-info h3 {
-    font-family: var(--font-header);
-    color: var(--text-color-light);
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-}
-
-.project-info p {
-    color: var(--text-color-dark);
-    margin-bottom: 1rem;
-}
-
-.project-tags {
-    margin-bottom: 1rem;
-}
-
-.project-tags span {
-    display: inline-block;
-    background-color: var(--primary-color);
-    color: var(--cyber-blue);
-    padding: 0.3rem 0.6rem;
-    border: 1px solid var(--cyber-blue);
-    font-size: 0.8rem;
-    margin-right: 0.5rem;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-}
-
-.project-links a {
-    color: var(--text-color-dark);
-    text-decoration: none;
-    margin-right: 1.5rem;
-    font-size: 1.2rem;
-    transition: color 0.3s, text-shadow 0.3s;
-}
-
-.project-links a:hover {
-    color: var(--accent-color);
-    text-shadow: 0 0 5px var(--accent-color);
-}
-
-.project-links a i {
-    margin-right: 0.5rem;
-}
 
 /* --- Contact Section --- */
 .contact-section {
@@ -429,6 +350,11 @@ body {
     margin: 0 auto 2rem;
     color: var(--text-color-dark);
     font-size: 1.1rem;
+}
+
+.contact-text strong {
+    color: var(--accent-color);
+    text-shadow: 0 0 5px var(--accent-color);
 }
 
 .social-links {
